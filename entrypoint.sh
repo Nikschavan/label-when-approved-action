@@ -44,6 +44,8 @@ label_when_approved() {
     if [[ "$approvals" == "$APPROVALS" ]]; then
       echo "Labeling pull request"
 
+      
+      
       if [[ -n "$ADD_LABEL" ]]; then
         addLabel=$ADD_LABEL
       fi
